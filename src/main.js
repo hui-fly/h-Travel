@@ -4,11 +4,11 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import './assets/styles/reset.css'
-import './assets/styles/border.css'
-import fastClick from 'fastclick'
+import './assets/styles/border.css'//1px问题
+import fastClick from 'fastclick'//防止点击延迟
 
 Vue.config.productionTip = false
-fastClick.attach(document.body）//将fastClick绑定到body
+fastClick.attach(document.body)//将fastClick绑定到body
 
 /* eslint-disable no-new */
 new Vue({
