@@ -9,7 +9,9 @@ import HomeHeader from './components/Header'
 export default {
   name: 'Home',
   components:{
-  	HomeHeader
+    HomeHeader:HomeHeader,
   }
 }
 </script>
+
+

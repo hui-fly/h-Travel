@@ -1,19 +1,21 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
-import App from './App'
+import App from './App'      
 import router from './router'
-import './assets/styles/reset.css'
-import './assets/styles/border.css'//1px问题
-import fastClick from 'fastclick'//防止点击延迟
+import 'styles/reset.css'
+import 'styles/border.css'// 1px问题
+import 'styles/iconfont.css'
+
+import fastClick from 'fastclick'// 防止点击300ms延迟
 
 Vue.config.productionTip = false
-fastClick.attach(document.body)//将fastClick绑定到body
+fastClick.attach(document.body)   // 将fastClick绑定到body
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  router,
-  components: { App },
-  template: '<App/>'
+  router:router,
+  components: { App:App },//定义了一个局部组件
+  template: '<App/>'       //渲染APP这个局部组件，在第四行引入
 })

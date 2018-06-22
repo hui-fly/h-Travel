@@ -8,9 +8,9 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/',                    
-      name: 'Home',
-      component: Home
+      path:'/',                    
+      name:'Home',   //路由名字
+      component:Home //指第三行的Home
     },
   ]
 })

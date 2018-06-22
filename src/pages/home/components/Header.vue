@@ -10,7 +10,7 @@
 		<router-link to='./city'>
 		  <div class="header-right">
 		    <span>城市</span>
-		    <span class="iconfont arrow-icon">&#xe64a;</span>
+		    <span class="iconfont arrow-icon">&#xe6aa;</span>
 		  </div>
 		</router-link>
 	</div>
@@ -22,7 +22,7 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
+<style>
   .header{                
   	display: flex;
   	line-height: .86rem;/*会继承到子元素,使子元素撑开header*/
@@ -34,20 +34,27 @@ export default {
   	width:.84rem;
   	text-align: center;
   }
-    
-  .header-right{
-  	width:1.24rem;
-  	text-align: center;
-  }
+ 
     
   .header-input{
   	flex:1;
   	margin-top: .12rem;
   	color: #ccc;
+    padding-left:.2rem; 
   	height: .64rem;
   	line-height: .64rem;
   	background: #fff;
   	border-radius: .1rem;
   }
-    
+     
+  .header-right{
+    width:1.24rem;
+    text-align: center;
+    color:#fff;
+  }
+
+  .arrow-icon{
+    margin-left: .-04rem;
+    font-size: .24rem;
+  }
 </style>
