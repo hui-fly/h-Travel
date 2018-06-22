@@ -73,16 +73,14 @@ export default{
 <style>
   .swiper-container{
   	height: 0px;
-  	padding-bottom: 50%;
-  	background: green;
-  }
+  	padding-bottom: 50%;  }
   .icon{
   	overflow: hidden;
   	float: left;
   	width: 25%;
   	height: 0px;
   	box-sizing: border-box;
-  	padding: 1% 4% 24% 4%;
+  	padding: 2% 5% 23% 5%;
   }
   .icon-img{
   	width: 100%;
