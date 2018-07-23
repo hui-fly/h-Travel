@@ -1,9 +1,9 @@
 <template>
   <div class="icons">
 	  <swiper>
-			<swiper-slide v-for='page of pages'>
-			  <div class="icon" v-for='item of page'>
-			    <img class="icon-img" :src="item.imgUrl">
+			<swiper-slide v-for-key='page in pages'>
+			  <div class="icon" v-for-key='item in page'>
+			    <img class="icon-img" v-bind="item.imgUrl">
 			    <p class="icon-desc">{{item.desc}}</p>
 			  </div>
 			</swiper-slide>
