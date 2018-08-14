@@ -1,6 +1,6 @@
 <template>
   <div class="icons">
-	  <swiper>
+	  <swiper :options="swiperOption">
 		<swiper-slide v-for='page of pages'>
 		  <div class="icon" v-for='item of page'>
 		    <img class="icon-img" :src="item.imgUrl">
@@ -13,51 +13,20 @@
 <script>
 export default{
 	name:'HomeIcons',
+	props:{
+		list:Array,
+	},
 	data () {
 		return {
-			iconList:[{
-				id:"002",
-				imgUrl:"https://imgs.qunarzz.com/piao/fusion/1804/53/f7c33a4412d59e02.png",
-				desc: '滑雪',
-			},{
-				id:"003",
-				imgUrl:"https://imgs.qunarzz.com/piao/fusion/1606/72/65b06c9a1158de9a.png",
-				desc: '温泉',
-			},{
-				id:"004",
-				imgUrl:"https://imgs.qunarzz.com/piao/fusion/1606/72/65b06c9a1158de9a.png",
-				desc: '滑雪',
-			},{
-				id:"005",
-				imgUrl:"https://imgs.qunarzz.com/piao/fusion/1704/fd/7b733d3656f4d002.png",
-				desc: '动物园',
-			},{
-				id:"006",
-				imgUrl:"https://imgs.qunarzz.com/piao/fusion/1606/72/65b06c9a1158de9a.png",
-				desc: '门票',
-			},{
-				id:"007",
-				imgUrl:"https://imgs.qunarzz.com/piao/fusion/1606/72/65b06c9a1158de9a.png",
-				desc: '一日游',
-			},{
-				id:"008",
-				imgUrl:"https://imgs.qunarzz.com/piao/fusion/1606/72/65b06c9a1158de9a.png",
-				desc: '滑雪',
-			},{
-				id:"009",
-				imgUrl:"https://imgs.qunarzz.com/piao/fusion/1606/b3/0249b48a69aaf49a.png",
-				desc: '滑雪',
-			},{
-				id:"010",
-				imgUrl:"https://imgs.qunarzz.com/piao/fusion/1606/72/65b06c9a1158de9a.png",
-				desc: '滑雪',
-			}]
+			swiperOption:{
+				autoPlay:false,
+			}
 		}
 	},
 	computed:{
 		pages() {
 			const pages = [];
-			this.iconList.forEach((item,index)=>{
+			this.list.forEach((item,index)=>{ //将一维数组分成二维数组
 				const page = Math.floor(index/8);
 				if(!pages[page]){
 					pages[page]=[];
