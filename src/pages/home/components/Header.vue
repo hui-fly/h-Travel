@@ -37,7 +37,6 @@ export default {
   	width:.84rem;
   	text-align: center;
   }
- 
     
   .header-input{
   	flex:1;

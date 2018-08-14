@@ -22,23 +22,6 @@ export default {
   props:{
     list:Array,
   },
-  data () {
-    return {
-      weekendList: [
-         {
-          id:"001",
-          imgUrl:"https://source.qunarzz.com/site/images/wap/home/recommend/iphoneplus/20180716_wap_11043.jpg",
-          tittle:"滑雪场",
-          desc:"【7-10-12点】八达岭长城门票+往返直通车，纯玩配领队"
-        },{
-          id:"002",
-          imgUrl:"https://source.qunarzz.com/site/images/wap/home/recommend/iphoneplus/anquan_20180716.png",
-          tittle:"游泳馆",
-          desc:"【7-10-12点】八达岭长城门票+往返直通车，纯玩配领队"
-        },
-      ]
-    }
-  },
 }
 </script>
 

@@ -20,43 +20,6 @@ export default {
   props:{
     list:Array,
   },
-  data () {
-    return {
-      recommendList: [
-         {
-          id:"001",
-          imgUrl:"https://imgs.qunarzz.com/p/tts2/1804/97/382b3bd308aea002.jpg_160x160_a24dc648.jpg",
-          tittle:"八达岭长城门票",
-          desc:"【7-10-12点】八达岭长城门票+往返直通车，纯玩配领队"
-        },{
-          id:"002",
-          imgUrl:"https://imgs.qunarzz.com/p/tts2/1804/97/382b3bd308aea002.jpg_160x160_a24dc648.jpg",
-          tittle:"八达岭长城门票",
-          desc:"【7-10-12点】八达岭长城门票+往返直通车，纯玩配领队"
-        },{
-          id:"003",
-          imgUrl:"https://imgs.qunarzz.com/p/tts2/1804/97/382b3bd308aea002.jpg_160x160_a24dc648.jpg",
-          tittle:"八达岭长城门票",
-          desc:"【7-10-12点】八达岭长城门票+往返直通车，纯玩配领队"
-        },{
-          id:"004",
-          imgUrl:"https://imgs.qunarzz.com/p/tts2/1804/97/382b3bd308aea002.jpg_160x160_a24dc648.jpg",
-          tittle:"八达岭长城门票",
-          desc:"【7-10-12点】八达岭长城门票+往返直通车，纯玩配领队"
-        },{
-          id:"005",
-          imgUrl:"https://imgs.qunarzz.com/p/tts2/1804/97/382b3bd308aea002.jpg_160x160_a24dc648.jpg",
-          tittle:"八达岭长城门票",
-          desc:"【7-10-12点】八达岭长城门票+往返直通车，纯玩配领队"
-        },{
-         id:"006",
-          imgUrl:"https://imgs.qunarzz.com/p/tts2/1804/97/382b3bd308aea002.jpg_160x160_a24dc648.jpg",
-          tittle:"八达岭长城门票",
-          desc:"【7-10-12点】八达岭长城门票+往返直通车，纯玩配领队"
-        }
-      ]
-    }
-  },
 }
 </script>
 
