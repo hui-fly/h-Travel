@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="recommend">
 	  <div class="recommend-tittle">热销推荐</div>
     <ul>
       <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
@@ -57,7 +57,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   .recommend-tittle{
     line-height: .8rem;
     text-indent: .2rem;/*缩进*/

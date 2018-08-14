@@ -1,12 +1,12 @@
 <template>
   <div class="icons">
 	  <swiper>
-			<swiper-slide v-for-key='page in pages'>
-			  <div class="icon" v-for-key='item in page'>
-			    <img class="icon-img" v-bind="item.imgUrl">
-			    <p class="icon-desc">{{item.desc}}</p>
-			  </div>
-			</swiper-slide>
+		<swiper-slide v-for='page of pages'>
+		  <div class="icon" v-for='item of page'>
+		    <img class="icon-img" :src="item.imgUrl">
+		    <p class="icon-desc">{{item.desc}}</p>
+		  </div>
+		</swiper-slide>
 	  </swiper>
   </div>
 </template>
@@ -51,7 +51,7 @@ export default{
 				id:"010",
 				imgUrl:"https://imgs.qunarzz.com/piao/fusion/1606/72/65b06c9a1158de9a.png",
 				desc: '滑雪',
-				}]
+			}]
 		}
 	},
 	computed:{
@@ -71,9 +71,10 @@ export default{
 </script>
 
 <style>
-  .swiper-container{
+  .swiper-container{       /*swiper添加的容器*/
   	height: 0px;
-  	padding-bottom: 50%;  }
+  	padding-bottom: 50%;  /*是宽高比是50%*/
+  }
   .icon{
   	overflow: hidden;
   	float: left;
@@ -92,7 +93,7 @@ export default{
     height: .5rem;
     line-height: .5rem;
     overflow: hidden;
-    white-space: nowrap;
+    white-space: nowrap;   /*当字符串过长时显示...*/
     text-overflow: ellipsis;
   }
 </style>
